@@ -4,9 +4,9 @@ using namespace std;
 //По въведено естествено число n изведете n-тото число от редицата на Фибоначи.
 
 int main()  {
-    long long number, help;
-    long long fib=0; 
-    long long previous=0;
+    int number, help;
+    int fib=0; 
+    int previous=0;
     cin>>number;
 
     for(int i=0; i<number ; i++){
