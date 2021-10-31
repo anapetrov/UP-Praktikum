@@ -9,7 +9,7 @@ int main()  {
     int previous=0;
     cin>>number;
 
-    for(int i=0; i<number ; i++){
+    for(int i=0; i<=number ; i++){
         if(i==0){
             previous=0;
             fib=0;
@@ -17,10 +17,11 @@ int main()  {
         else if(i==1) {
             previous=fib;
             fib=1;
-        };
-        help=previous;
-        previous=fib;
-        fib= previous+help;
+        }else{
+            help=previous;
+            previous=fib;
+            fib= previous+help;
+        }
     }
     cout<<number<<"->"<<fib;
     return 0;
