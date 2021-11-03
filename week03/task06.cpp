@@ -9,9 +9,18 @@ using namespace std;
 // Изход: 32
 
 int main() {
-    int number, degree;
+    double number;
+    int degree;
     cin >> number >> degree;
-    int answer=1;
+    double answer=1;
+    if(degree==0){
+        cout<<answer;
+        return 0;
+    }
+    if(degree<0){
+        number = 1/number;
+        degree *=-1;
+    }
     for(int i=0; i<degree; i++) {
         answer*=number;
     }
