@@ -9,7 +9,7 @@ int main() {
 	int number;
 	int array[MAX_SIZE];
 	cin >> number;
-	while (number >= MAX_SIZE || number <= 0) {
+	while (number >= MAX_SIZE || number < 0) {
 		cout << "Invalid input plese enter another size: ";
 		cin >> number;
 	}
