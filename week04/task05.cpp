@@ -7,6 +7,10 @@ int main() {
 	const int MAX_SIZE = 20;
 	int number;
 	cin >> number;
+	while(number >= MAX_SIZE || number < 0){
+		cout << "Invalid input plese enter another size: ";
+        	cin >> number;
+	}
 	int array[MAX_SIZE];
 	for (int i = 0; i < number; i++) {
 		cin >> array[i];
