@@ -30,7 +30,7 @@ bool check(int number){
         if (number % 10 < number / 10 % 10) {
             return false;
         } 
-        number/=10;
+        number /= 10;
     }
     return true;
 }
