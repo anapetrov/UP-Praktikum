@@ -52,7 +52,7 @@ int main() {
     char string1[MAX_SIZE], string2[MAX_SIZE];
     cin >> string1 >> string2;
     while (!check(string1, string2)) {
-        cout << "The second string is bigger than the fist! Please enter another second string: ";
+        cout << "The second string is bigger than the first! Please enter another second string: ";
         cin >> string2;
     }
 
