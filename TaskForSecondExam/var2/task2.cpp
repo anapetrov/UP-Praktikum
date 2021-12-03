@@ -16,7 +16,7 @@ using std::cin;
 using std::cout;
 
 bool check(int number){
-    if(number>=0 && number<=99){
+    if(number >= 0 && number <= 99){
         return false;
     }
     while(number >= 100){
