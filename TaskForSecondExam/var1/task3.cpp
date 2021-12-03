@@ -7,7 +7,7 @@ using std::cout;
 const int MAX_SIZE = 128;
 
 void input(int array[], int size){
-    for(int i=0; i<size; i++){
+    for(int i = 0; i < size; i++){
         cin >> array[i];
     }
 }
@@ -15,14 +15,14 @@ void input(int array[], int size){
 bool productIsDigit(int num){
     int product = 1;
     while(num){
-        product *= (num%10);
+        product *= (num % 10);
         num /= 10;
     }
     return product >= 0 && product <= 9;
 }
 
 void print(int array[], int size){
-    for(int i=0; i<size; i++){
+    for(int i=0; i < size; i++){
         if(productIsDigit(array[i])){
             cout << array[i] << " ";
         }
